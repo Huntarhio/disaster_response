@@ -1,7 +1,5 @@
 # Disaster Response Pipeline Project (Udacity - Data Science Nanodegree)
 
-![Intro Pic](screenshots/intro.png)
-
 
 ## Table of Contents
 1. [Description](#description)
@@ -66,7 +64,7 @@ git clone https://github.com/Huntarhio/disaster_response.git
 
 
 ### Important Files<a name="importantfiles"></a>
-**app/templates/***: templates/html files for web app
+**app/templates/**: templates/html files for web app
 
 **data/process_data.py**: Extract Train Load (ETL) pipeline used for reading data from source, data cleaning/transformation, feature extraction/engineering, and loading data in a SQLite database
 
@@ -89,8 +87,8 @@ git clone https://github.com/Huntarhio/disaster_response.git
 ## License<a name="license"></a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<a name="acknowledgement"></a>
-## Acknowledgements
+
+## Acknowledgements<a name="acknowledgement"></a>
 
 * [Udacity](https://www.udacity.com/) for providing an amazing Data Science Nanodegree Program
 * [Figure Eight](https://www.figure-eight.com/) for providing the relevant dataset to train the model
