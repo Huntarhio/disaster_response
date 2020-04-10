@@ -7,6 +7,7 @@
 	1. [Dependencies](#dependencies)
 	2. [Installing](#installation)
 	3. [Executing Program](#execution)
+	4. [Files](#files)
 3. [Authors](#authors)
 4. [License](#license)
 5. [Acknowledgement](#acknowledgement)
@@ -63,7 +64,7 @@ git clone https://github.com/Huntarhio/disaster_response.git
 
 
 
-### Important Files<a name="importantfiles"></a>
+### Files<a name="files"></a>
 **app/templates/**: templates/html files for web app
 
 **data/process_data.py**: Extract Train Load (ETL) pipeline used for reading data from source, data cleaning/transformation, feature extraction/engineering, and loading data in a SQLite database
