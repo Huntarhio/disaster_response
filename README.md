@@ -40,7 +40,7 @@ This project is divided in the following key sections:
 ### Installing<a name="installation"></a>
 To clone the git repository:
 ```
-git clone https://github.com/Huntarhio/disaster_response.git
+git clone https://github.com/adeoti-ade/disaster_response.git
 ```
 
 ### Executing Program<a name="execution"></a>:
