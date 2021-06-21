@@ -1,3 +1,4 @@
+import os
 import json
 import plotly
 import pandas as pd
@@ -21,6 +22,7 @@ stop_words = set(stopwords.words('english'))
 from collections import Counter
 
 app = Flask(__name__)
+DATABASE_URL = os.environ.get('DATABASE_URL')
 
 
 class StartingVerbExtractor(BaseEstimator, TransformerMixin):
@@ -76,11 +78,11 @@ def count_word(data):
 
 
 # load data
-engine = create_engine('sqlite:///../data/DisasterResponse.db')
+engine = create_engine('sqlite:///data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterResponse_table', engine)
 
-# load model
-model = joblib.load("../models/classifier.pkl")
+# load models
+model = joblib.load("models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -219,5 +221,5 @@ def main():
 if __name__ == '__main__':
     main()
 
-engine = create_engine('sqlite:///../data/DisasterResponse.db')
+engine = create_engine('sqlite:///data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterResponse_table', engine)
